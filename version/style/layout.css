@@ -1,5 +1,12 @@
 /* -----------------------------------------------------------------
 uxcoding: reset css:
+
+http://hortus-mebel.ru/
+
+https://www.thefurnituregallery.com.au/
+
+https://www.more-moebel.de/en
+
 ----------------------------------------------------------------- */
 
 body,
@@ -695,7 +702,7 @@ arival-Box:
 	color: #000000;
 }
 
-.arival-head p {
+.arival-head .arival-span {
 	margin: 0;
 	padding: 0 0 .5rem 0;
 	display: inline-block;
@@ -703,7 +710,7 @@ arival-Box:
 	color: #545454;
 	position: relative;
 }
-.arival-head p::before {
+.arival-head .arival-span::before {
 	margin: 0;
 	padding: 0;
 	content: '';
@@ -715,7 +722,7 @@ arival-Box:
 	z-index: 0;
 	background-color: #000000;
 }
-.arival-head p::after {
+.arival-head .arival-span::after {
 	margin: 0;
 	padding: 0;
 	content: '';
@@ -902,7 +909,7 @@ gallery-Box:
 	color: #000000;
 }
 
-.gallery-head p {
+.gallery-head .gallery-span {
 	margin: 0;
 	padding: 0 0 .5rem 0;
 	display: inline-block;
@@ -910,7 +917,7 @@ gallery-Box:
 	color: #545454;
 	position: relative;
 }
-.gallery-head p::before {
+.gallery-head .gallery-span::before {
 	margin: 0;
 	padding: 0;
 	content: '';
@@ -922,7 +929,7 @@ gallery-Box:
 	z-index: 0;
 	background-color: #000000;
 }
-.gallery-head p::after {
+.gallery-head .gallery-span::after {
 	margin: 0;
 	padding: 0;
 	content: '';
@@ -1316,7 +1323,7 @@ product-Box:
 	color: #000000;
 }
 
-.product-head p {
+.product-head .product-span {
 	margin: 0;
 	padding: 0 0 .5rem 0;
 	display: inline-block;
@@ -1324,7 +1331,7 @@ product-Box:
 	color: #545454;
 	position: relative;
 }
-.product-head p::before {
+.product-head .product-span::before {
 	margin: 0;
 	padding: 0;
 	content: '';
@@ -1336,7 +1343,7 @@ product-Box:
 	z-index: 0;
 	background-color: #000000;
 }
-.product-head p::after {
+.product-head .product-span::after {
 	margin: 0;
 	padding: 0;
 	content: '';
@@ -1462,7 +1469,7 @@ inquiry-Box:
 	color: #000000;
 }
 
-.inquiry-head p {
+.inquiry-head .inquiry-span {
 	margin: 0;
 	padding: 0 0 .5rem 0;
 	display: inline-block;
@@ -1470,7 +1477,7 @@ inquiry-Box:
 	color: #545454;
 	position: relative;
 }
-.inquiry-head p::before {
+.inquiry-head .inquiry-span::before {
 	margin: 0;
 	padding: 0;
 	content: '';
@@ -1482,7 +1489,7 @@ inquiry-Box:
 	z-index: 0;
 	background-color: #000000;
 }
-.inquiry-head p::after {
+.inquiry-head .inquiry-span::after {
 	margin: 0;
 	padding: 0;
 	content: '';
@@ -1503,6 +1510,19 @@ inquiry-Box:
     display: block;
 }
 
+.inquiry-form .inquiry-txt{
+	margin: 0 0 2rem 0;
+    padding: 0;	
+	display: block;
+	text-align: center;
+}
+
+.inquiry-form .inquiry-txt p{
+	margin: auto;
+    padding: 0 1rem;
+	display: block;
+}
+
 .inquiry-form .inquiry-list{
 	margin: 0 0 1rem 0;
 }
@@ -1513,12 +1533,13 @@ inquiry-Box:
 }
 
 .inquiry-form .inquiry-btn{
+	padding: 1.45rem 0 0;
 	display: block;
 	text-align: center;
 }
 .inquiry-form .inquiry-btn button[type="submit"]{
 	margin: 0;
-    padding: .6rem 4.5rem;
+    padding: .6rem 3.5rem;
     width: auto;
     display: inline-block;
     text-transform: uppercase;
@@ -1532,7 +1553,147 @@ inquiry-Box:
 	border: 1px solid #ced4da;
 	background-color: transparent;
 }
+/* -----------------------------------------------------------------
+form-Box:
+----------------------------------------------------------------- */
 
+.form-Box {
+	margin: 0 0 10rem 0;
+	padding: 10rem 0 0;
+	width: 100%;
+}
+
+.form-Bar {
+	display: flex;
+}
+
+.form-head {
+	margin: 0 0 2rem 0;
+	padding: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+.form-head h2 {
+	margin: 0 0 1rem 0;
+	padding: 0;
+	font-size: 40px;
+	line-height: 52px;
+	text-transform: uppercase;
+	letter-spacing: 0.10em;
+	font-family: 'playfair_displayregular';
+	color: #000000;
+}
+
+.form-head .form-span {
+	margin: 0;
+	padding: 0 0 .5rem 0;
+	display: inline-block;
+	text-align: center;
+	color: #545454;
+	position: relative;
+}
+.form-head .form-span::before {
+	margin: 0;
+	padding: 0;
+	content: '';
+	width: 100%;
+	height: 4px;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 0;
+	background-color: #000000;
+}
+.form-head .form-span::after {
+	margin: 0;
+	padding: 0;
+	content: '';
+	width: 50%;
+	height: 4px;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 1;
+	background-color: #d5a07f;
+}
+
+.form-Bar .form-center .form-txt{
+	margin: 0 0 2rem 0;
+    padding: 0;	
+	display: block;
+	text-align: center;
+}
+
+.form-Bar .form-left .form-list {
+	margin: 0 0 1rem 0;
+    padding: 0;
+	display: block;
+}
+
+.form-Bar .form-description{
+	resize: none;
+	min-height: 160px;
+}
+.form-Bar .form-btn{
+	padding: 1.45rem 0 0;
+	display: block;
+	text-align: center;
+}
+.form-Bar .form-btn button[type="submit"]{
+	margin: 0;
+    padding: .6rem 3.5rem;
+    width: auto;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #d5a07f;
+    border-radius: .25rem;
+    border: 1px solid #000000;
+    background-color: #000000;
+}
+.form-Bar .form-btn button[type="submit"]:hover{
+	color: #000000;
+	border: 1px solid #ced4da;
+	background-color: transparent;
+}
+
+.form-Bar .form-right .form-address {
+	margin: 0 0 1rem 0;
+    padding: 0;
+	display: block;
+}
+.form-Bar .form-right .form-address h3{
+	margin:  0 0 1rem 0;
+    padding: 0;
+	display: block;
+}
+
+.form-Bar .form-right .form-email {
+	margin: 0 0 1rem 0;
+    padding: 0;
+	display: block;
+}
+.form-Bar .form-right .form-email ul{
+	margin: 0;
+    padding: 0;
+	display: block;
+}
+.form-Bar .form-right .form-email ul li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.form-Bar .form-right .form-email ul li a{
+	margin: 0;
+	padding: 0;
+	color: #545454;
+	text-decoration: none;
+}
+.form-Bar .form-right .form-email ul li a:hover{
+	color: #000000;
+	text-decoration: none;
+}
 
 
 
