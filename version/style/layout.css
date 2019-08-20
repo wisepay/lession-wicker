@@ -1620,7 +1620,7 @@ form-Box:
 }
 
 .form-Bar .form-center .form-txt{
-	margin: 0 0 2rem 0;
+	margin: 0 0 2.5rem 0;
     padding: 0;	
 	display: block;
 	text-align: center;
@@ -1659,19 +1659,19 @@ form-Box:
 }
 
 .form-Bar .form-right .form-address {
-	margin: 0 0 1rem 0;
-    padding: 0;
+	margin: 0 0 2.5rem 0;
+    padding: 0 0 0 10rem;
 	display: block;
 }
 .form-Bar .form-right .form-address h3{
-	margin:  0 0 1rem 0;
+	margin:  0 0 .5rem 0;
     padding: 0;
 	display: block;
 }
 
 .form-Bar .form-right .form-email {
-	margin: 0 0 1rem 0;
-    padding: 0;
+	margin: 0 0 2.5rem 0;
+    padding: 0 0 0 10rem;
 	display: block;
 }
 .form-Bar .form-right .form-email ul{
@@ -1694,6 +1694,23 @@ form-Box:
 	color: #000000;
 	text-decoration: none;
 }
+
+.form-Bar .form-right .form-call {
+	margin: 0 0 1rem 0;
+    padding: 0 0 0 10rem;
+	display: block;
+}
+.form-Bar .form-right .form-call ul{
+	margin: 0;
+    padding: 0;
+	display: block;
+}
+.form-Bar .form-right .form-call ul li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 
 
 
