@@ -105,6 +105,9 @@ $("#arival_Bar01").slick({
     ]
 });
 
+
+
+
 // function for scroll down:-
 $(function() {
     $("#scroll_btn01").click (function() {
@@ -120,30 +123,26 @@ $('[data-fancybox="product_link"]').fancybox({
     closeEffect: "none"
 });
 
+$('[data-fancybox="factory_link"]').fancybox({
+	// Options will go here
+    openEffect: "none",
+    closeEffect: "none"
+});
 
 
+// function for sub menu:-
+$(document).on("click", "#sub_menu", function(e){
 
-// open slide nav example:-
-// $(document).ready(function () {
-//     $("#snav_button").on("click", function (e) {
-//         e.preventDefault();
-//         $(this).toggleClass("active");
-//         $("#snav_right").toggleClass("active");
-//     });
-// });
+    $(this).find("dl").slideToggle();
+    e.stopPropagation();
 
-// $(document).ready(function(){
-//     screenFit();
-// });
+    if($(this).find("a").children("i").hasClass("fa-angle-down")){
+        $(this).find("a").children("i").removeClass("fa-angle-down");
+        $(this).find("a").children("i").addClass("fa-angle-up");
+    }else{
+        $(this).find("a").children("i").removeClass("fa-angle-up");
+        $("#sub_menu").find("a").children("i").addClass("fa-angle-down");
+    }
 
-// $(window).resize(function(){
-//     screenFit();
-// })
+});
 
-// function for cut nav and header dynamic height:- 
-// function screenFit(){
-//     var $windowHeight = $(window).height();
-//     var $navHeight = $("#nav_Box").innerHeight();
-//     var $homeHeight = $("#home_Box, .home-list").height($windowHeight - $navHeight).css("overflow", "hidden");
-//     // window.console.log($homeHeight);
-// }

@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   </head>
-   <head>
       <!-- General title tags -->
       <title>Contact us</title>
       <!-- General meta tags needed-->
@@ -19,16 +14,16 @@
       <!-- font-awesome.min.css | (4.7.0) -->
       <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
       <!-- fonts for this website -->
-      <link rel="stylesheet" href="fonts/stylesheet.css" rel="stylesheet">
+      <link href="fonts/stylesheet.css" rel="stylesheet">
       <!-- Custom bootstrap css for this website-->
-      <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <!-- Custom slick css for this website-->
-      <link rel="stylesheet" href="vendor/slick/css/slick.css" rel="stylesheet">
-      <link rel="stylesheet" href="vendor/slick/css/slick-theme.css" rel="stylesheet">
+      <link href="vendor/slick/css/slick.css" rel="stylesheet">
+      <link href="vendor/slick/css/slick-theme.css" rel="stylesheet">
       <!-- Custom fancybox css for this website-->
-      <link rel="stylesheet" href="vendor/fancybox/css/jquery.fancybox.min.css" rel="stylesheet">
+      <link href="vendor/fancybox/css/jquery.fancybox.min.css" rel="stylesheet">
       <!-- Custom css for this website-->
-      <link rel="stylesheet" href="style/layout.css" rel="stylesheet">
+      <link href="style/layout.css" rel="stylesheet">
    </head>
    <body>
       <!-- / wrapper \ -->
@@ -41,25 +36,33 @@
                </div>
                <div class="menu-center">
                   <ul>
-                     <li><a href="javascript:void(0);">Home</a></li>
-                     <li><a href="javascript:void(0);">About</a></li>
-                     <li><a href="javascript:void(0);">Products <i class="fa fa-angle-down menu-down" aria-hidden="true"></i></a></li>
-                     <li><a href="javascript:void(0);">Factory Pics</a></li>
-                     <li><a href="javascript:void(0);">Videos</a></li>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="about.html">About</a></li>
+                     <li class="sub-menu" id="sub_menu">
+                        <a href="javascript:void(0);">Products <i class="fa fa-angle-down menu-down" aria-hidden="true"></i></a>
+                        <dl>
+                           <dd><a href="product.html">Product list 1st</a></dd>
+                           <dd><a href="product.html">Product list 2nd</a></dd>
+                           <dd><a href="product.html">Product list 3rd</a></dd>
+                           <dd><a href="product.html">Product list 4th</a></dd>
+                           <dd><a href="product.html">Product list 5th</a></dd>
+                        </dl>
+                     </li>
+                     <li><a href="factory.html">Factory Pics</a></li>
+                     <li><a href="video.html">Videos</a></li>
                      <li><a href="javascript:void(0);">Download Catalog</a></li>
-                     <li><a href="javascript:void(0);">Contact</a></li>
+                     <li><a href="contactus.html">Contact</a></li>
                   </ul>
                </div>
                <div class="menu-right">
                   <ul>
                      <li><span class="menu-span">Call Now:</span> +91- 8178160039</li>
-                     <li><a href="javascript:void(0);" title="Go to gallery">G</a></li>
+                     <li><a href="product.html" title="Go to gallery">G</a></li>
                   </ul>
                </div>
             </div>
          </div>
          <!-- menu-Box -->
-
          <!-- login-Box -->
          <div class="login-Box">
             <div class="login-head">
@@ -76,15 +79,15 @@
                            <span class="login-invalid" id="">This field is required.</span>
                         </div>
                         <div class="login-list col-12">
-                            <label for="login_password">Password</label>
-                            <input type="password" class="form-control login-password" id="login_password" placeholder="" required="">
-                            <span class="login-invalid" id="">This field is required.</span>
+                           <label for="login_password">Password</label>
+                           <input type="password" class="form-control login-password" id="login_password" placeholder="" required="">
+                           <span class="login-invalid" id="">This field is required.</span>
                         </div>
                      </div>
                      <div class="row">
                         <div class="login-list col-12 checkbox">
-                            <input type="checkbox" class="login-check" value="remember-me" id="login_remember">
-                            <label for="login_remember">Remember me</label>
+                           <input type="checkbox" class="login-check" value="remember-me" id="login_remember">
+                           <label for="login_remember">Remember me</label>
                         </div>
                      </div>
                      <div class="row">
@@ -99,7 +102,6 @@
             </div>
          </div>
          <!-- login-Box -->
-
          <!-- footer-Box -->
          <div class="footer-Box">
             <div class="container-fluid">

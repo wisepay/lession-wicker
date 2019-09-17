@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   </head>
-   <head>
       <!-- General title tags -->
       <title>Wicker Delite Products</title>
       <!-- General meta tags needed-->
@@ -19,16 +14,16 @@
       <!-- font-awesome.min.css | (4.7.0) -->
       <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
       <!-- fonts for this website -->
-      <link rel="stylesheet" href="fonts/stylesheet.css" rel="stylesheet">
+      <link href="fonts/stylesheet.css" rel="stylesheet">
       <!-- Custom bootstrap css for this website-->
-      <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <!-- Custom slick css for this website-->
-      <link rel="stylesheet" href="vendor/slick/css/slick.css" rel="stylesheet">
-      <link rel="stylesheet" href="vendor/slick/css/slick-theme.css" rel="stylesheet">
+      <link href="vendor/slick/css/slick.css" rel="stylesheet">
+      <link href="vendor/slick/css/slick-theme.css" rel="stylesheet">
       <!-- Custom fancybox css for this website-->
-      <link rel="stylesheet" href="vendor/fancybox/css/jquery.fancybox.min.css" rel="stylesheet">
+      <link href="vendor/fancybox/css/jquery.fancybox.min.css" rel="stylesheet">
       <!-- Custom css for this website-->
-      <link rel="stylesheet" href="style/layout.css" rel="stylesheet">
+      <link href="style/layout.css" rel="stylesheet">
    </head>
    <body>
       <!-- / wrapper \ -->
@@ -41,25 +36,33 @@
                </div>
                <div class="menu-center">
                   <ul>
-                     <li><a href="javascript:void(0);">Home</a></li>
-                     <li><a href="javascript:void(0);">About</a></li>
-                     <li><a href="javascript:void(0);">Products <i class="fa fa-angle-down menu-down" aria-hidden="true"></i></a></li>
-                     <li><a href="javascript:void(0);">Factory Pics</a></li>
-                     <li><a href="javascript:void(0);">Videos</a></li>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="about.html">About</a></li>
+                     <li class="sub-menu" id="sub_menu">
+                        <a href="javascript:void(0);">Products <i class="fa fa-angle-down menu-down" aria-hidden="true"></i></a>
+                        <dl>
+                           <dd><a href="product.html">Product list 1st</a></dd>
+                           <dd><a href="product.html">Product list 2nd</a></dd>
+                           <dd><a href="product.html">Product list 3rd</a></dd>
+                           <dd><a href="product.html">Product list 4th</a></dd>
+                           <dd><a href="product.html">Product list 5th</a></dd>
+                        </dl>
+                     </li>
+                     <li><a href="factory.html">Factory Pics</a></li>
+                     <li><a href="video.html">Videos</a></li>
                      <li><a href="javascript:void(0);">Download Catalog</a></li>
-                     <li><a href="javascript:void(0);">Contact</a></li>
+                     <li><a href="contactus.html">Contact</a></li>
                   </ul>
                </div>
                <div class="menu-right">
                   <ul>
                      <li><span class="menu-span">Call Now:</span> +91- 8178160039</li>
-                     <li><a href="javascript:void(0);" title="Go to gallery">G</a></li>
+                     <li><a href="product.html" title="Go to gallery">G</a></li>
                   </ul>
                </div>
             </div>
          </div>
          <!-- menu-Box -->
-
          <!-- product-Box -->
          <div class="product-Box">
             <div class="product-head">
@@ -68,68 +71,70 @@
             </div>
             <div class="container-fluid">
                <div class="row product-Bar" id="product_Bar01">
-
                   <div class="product-list col-lg-3 col-md-3 col-12">
                      <a class="product-link" href="https://source.unsplash.com/juHayWuaaoQ/1500x1000" title="CIC 01" data-fancybox="product_link" data-caption="CIC 01">
                         <div class="product-pick">
                            <img src="https://source.unsplash.com/juHayWuaaoQ/600x480" alt="image" draggable="false">
                         </div>
-                    </a>
-                    <div class="product-code">
+                     </a>
+                     <div class="product-code">
                         <ul>
-                            <li><h3>CIC 01</h3></li>
-                            <li><a href="javascript:void(0);">Make an Inquiry</a></li>
+                           <li>
+                              <h3>CIC 01</h3>
+                           </li>
+                           <li><a href="inquiry.html">Make an Inquiry</a></li>
                         </ul>
-                    </div>
+                     </div>
                   </div>
-
                   <div class="product-list col-lg-3 col-md-3 col-12">
                      <a class="product-link" href="https://source.unsplash.com/eWFdaPRFjwE/1500x1000" title="CIC 02" data-fancybox="product_link" data-caption="CIC 02">
                         <div class="product-pick">
                            <img src="https://source.unsplash.com/eWFdaPRFjwE/600x480" alt="image" draggable="false">
                         </div>
-                    </a>
-                    <div class="product-code">
+                     </a>
+                     <div class="product-code">
                         <ul>
-                            <li><h3>CIC 02</h3></li>
-                            <li><a href="javascript:void(0);">Make an Inquiry</a></li>
+                           <li>
+                              <h3>CIC 02</h3>
+                           </li>
+                           <li><a href="inquiry.html">Make an Inquiry</a></li>
                         </ul>
-                    </div>
+                     </div>
                   </div>
-
                   <div class="product-list col-lg-3 col-md-3 col-12">
                      <a class="product-link" href="https://source.unsplash.com/c1JxO-uAZd0/1500x1000" title="CIC 03" data-fancybox="product_link" data-caption="CIC 03">
                         <div class="product-pick">
                            <img src="https://source.unsplash.com/c1JxO-uAZd0/600x480" alt="image" draggable="false">
                         </div>
-                    </a>
-                    <div class="product-code">
+                     </a>
+                     <div class="product-code">
                         <ul>
-                            <li><h3>CIC 03</h3></li>
-                            <li><a href="javascript:void(0);">Make an Inquiry</a></li>
+                           <li>
+                              <h3>CIC 03</h3>
+                           </li>
+                           <li><a href="inquiry.html">Make an Inquiry</a></li>
                         </ul>
-                    </div>
+                     </div>
                   </div>
-
                   <div class="product-list col-lg-3 col-md-3 col-12">
                      <a class="product-link" href="https://source.unsplash.com/eXHeq48Z-Q4/1500x1000" title="CIC 04" data-fancybox="product_link" data-caption="CIC 04">
                         <div class="product-pick">
                            <img src="https://source.unsplash.com/eXHeq48Z-Q4/600x480" alt="image" draggable="false">
                         </div>
-                    </a>
-                    <div class="product-code">
+                     </a>
+                     <div class="product-code">
                         <ul>
-                            <li><h3>CIC 04</h3></li>
-                            <li><a href="javascript:void(0);">Make an Inquiry</a></li>
+                           <li>
+                              <h3>CIC 04</h3>
+                           </li>
+                           <li><a href="inquiry.html">Make an Inquiry</a></li>
                         </ul>
-                    </div>
+                     </div>
                   </div>
-
                </div>
             </div>
          </div>
          <!-- product-Box -->
-
          <!-- footer-Box -->
          <div class="footer-Box">
             <div class="container-fluid">
@@ -215,7 +220,6 @@
             </div>
          </div>
          <!-- footer-Box -->
-
          <!-- copy-Box -->
          <div class="copy-Box">
             <div class="copy-Bar">
@@ -223,7 +227,6 @@
             </div>
          </div>
          <!-- copy-Box -->
-
       </div>
       <!-- \ wrapper / -->
       <!-- jquery.min.js (3.4.1) -->
