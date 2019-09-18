@@ -146,3 +146,7 @@ $(document).on("click", "#sub_menu", function(e){
 
 });
 
+// function for responsive menu:-
+$(document).on("click","#menu_button", function(){
+    $(".menu-center").slideToggle();
+})
